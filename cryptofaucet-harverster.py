@@ -10,7 +10,7 @@ from twocaptcha import TwoCaptcha
 
 config = {
             'server':           '2captcha.com',
-            'apiKey':           'e9e634847dff7cb9cd7b39c7069465fa',
+            'apiKey':           'YOUR_APIKEY',
             'defaultTimeout':    120,
             'recaptchaTimeout':  600,
             'pollingInterval':   10,
@@ -54,7 +54,7 @@ password.send_keys('PASSWORD')
 login_btn = driver.find_element(By.XPATH, '//*[@id="methods"]/form/div[4]/center[2]/button')
 login_btn.click()
 
-id = solver.recaptcha(key='e9e634847dff7cb9cd7b39c7069465fa',
+id = solver.recaptcha(key='YOUR_APIKEY',
                       method='userrecaptcha',
                       googlekey='6LeKF3sUAAAAAJZglWVogSBKOHeqH78eOHXLw79K',
                       pageurl='https://autofaucet.dutchycorp.space/login.php',  
